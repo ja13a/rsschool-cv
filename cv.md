@@ -1,8 +1,4 @@
 <style>
-	:root {
-		background-color: #292929;
-	}
-
 	.image-block {
 		display: inline-block;
 		vertical-align: top;
@@ -36,14 +32,16 @@
 	<img class="profile-image" src="https://i.imgur.com/ycmGu8C.jpeg" title="me IRL" alt="me IRL" width="300"/>
 </div>
 
-#
+***
+
 ## Contacts:
 🇷🇺 Saint-Petersburg, Russia \
 📬 suvorovsergey99@gmail.com \
 💬 https://t.me/j4134 \
 🐙 https://github.com/ja13a
 
-#
+***
+
 ## Skills and Proficiency:
 - HTML, CSS/SCSS
 - JavaScript, Typescript,
@@ -51,7 +49,8 @@
 - Parcel, Webpack (in process...)
 - Git, GitHub, Bitbucket
 
-#
+***
+
 ## Code example:
 
 ##### Codewars task:
@@ -65,5 +64,6 @@ var lastDigit = function(str1, str2) {
   return (str2 === "0") ? 1 : Math.pow(str1.slice(-1), (str2.slice(-2) - (Math.trunc(str2.slice(-2) / 4) - 1) * 4)) % 10;
 }
 ```
-#
+***
+
 <img style="background-color: #fff" alt="rsschool-logo" src="https://i.imgur.com/hWj1yK6.png" width="100px" >
