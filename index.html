@@ -5,9 +5,113 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
-	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github-dark.min.css">
+	<title>ja13a CV</title>
 </head>
 <body>
-	<div class="test"></div>
+	<div class="wrapper">
+		<nav class="header-navigation">
+			<ul class="navigation-links">
+				<li class="navigation-link"><a href="#contacts">Contacts</a></li>
+				<li class="navigation-link"><a href="#skills">Skills</a></li>
+				<li class="navigation-link"><a href="#code">Code</a></li>
+				<li class="navigation-link"><a href="#edu">Education</a></li>
+				<li class="navigation-link"><a href="#langs">Languages</a></li>
+				<li class="navigation-link"><a href="#projects">Projects</a></li>
+				<li class="navigation-link"><a href="#about-me">About me</a></li>
+			</ul>
+		</nav>
+		<header>
+			<img class="profile-image" src="./ycmGu8C.jpeg" title="me IRL" alt="me IRL"/>
+			<div class="short-info">
+				<h1 class="name">Suvorov Sergey</h1>
+				<h3 class="job">frontend developer</h3>
+			</div>
+		</header>
+		<main>
+			<aside class="info-side">
+				<section class="contacts" id="contacts">
+					<h2 class="contacts-text">Contacts:</h2>
+					<ul class="contacts-list">
+						<li class="contacts-list-item">🇷🇺 Saint-Petersburg, Russia</li>
+						<li class="contacts-list-item">📬 suvorovsergey99@gmail.com</li>
+						<li class="contacts-list-item">💬 <a href="https://t.me/j4134">t.me/j4134</a></li>
+						<li class="contacts-list-item">🐙 <a href="https://github.com/ja13a">https://github.com/ja13a</a></li>
+					</ul>
+				</section>
+				<section class="skills" id="skills">
+					<h2 class="skills-text">Skills:</h2>
+					<ul class="skills-list">
+						<li>▫️ HTML, CSS/SCSS</li>
+						<li>▫️ JavaScript, Typescript</li>
+						<li>▫️ React, MobX</li>
+						<li>▫️ Parcel, Webpack (in process...)</li>
+						<li>▫️ Git, GitHub, Bitbucket</li>
+					</ul>
+				</section>
+				<section class="langs" id="langs">
+					<h2 class="languages-text">Languages:</h2>
+					<ul class="languages-list">
+						<li>📗 Russian: native</li>
+						<li>📕 English: basic</li>
+					</ul>
+				</section>
+			</aside>
+			<div class="info">
+				<section class="about-me" id="about-me">
+					<h2 class="about-me-text">About me:</h2>
+					<article class="about-me-article">
+						Sup! I'm currently working in a small company, located in Saint-Petersburg, as a junior frontend developer.
+						I am looking forward to obtain new knowledges in the field of web development.
+					</article>
+				</section>
+				<section id="code" class="code">
+					<h2 class="code-text">Code example:</h2>
+					<article class="code-task">
+						<strong>Codewars task:</strong>
+						<p>
+							Define a function that takes in two non-negative integers a and b and returns the last decimal digit of a^b. Note that a and b may be <strong>very large!</strong><br/>
+							For example, the last decimal digit of 9^7 is 9, since 9^7 = 4782969. The last decimal digit of (2^200)^(2^300), which has over 10^92 decimal digits, is 6. Also, please take 0^0 to be 1.
+						</p>
+						<strong>Code:</strong> <br/>
+						<pre class="javascript"><code class="code-block">var lastDigit = function(str1, str2) {
+  return (str2 === "0") ? 1 : Math.pow(str1.slice(-1), (str2.slice(-2) - (Math.trunc(str2.slice(-2) / 4) - 1) * 4)) % 10;
+}</code></pre>
+					</article>
+				</section>
+				<section class="projects" id="projects">
+					<h2 class="projects-text">Projects:</h2>
+					<article class="projects-article">
+						🤖 Working on it...
+					</article>
+				</section>
+				<section class="edu" id="edu">
+					<h2 class="edu-text">Education:</h2>
+					<article class="edu-article">
+						<ul class="edu-list">
+							<li>🎓 <strong>2017-2021</strong> Bachelors of «Information systems and technologies» at 
+								Saint-Petersburg State Forest Technical University</li>
+							<li>📝 <strong>2021-2022</strong> RS School «JavaScript/Front-end. Stage 0»</li>
+						</ul>
+					</article>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<a class="gh-link" href="https://github.com/ja13a"><img class="gh-logo" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png" alt="gitHub_logo"></a>
+			<a class="rsschool-link" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rsschool_logo"></a>
+			<div onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')" title="Happy new year!" class="footer-year"><strong>2022</strong> 🎉</div>
+		</footer>
+	</div>
+
+
+	
+	<script type="text/javascript" src="./index.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 </body>
 </html>
