@@ -1,0 +1,212 @@
+body {
+	font-family: 'VT323', monospace;
+	background-color: #353535;
+}
+
+.wrapper {
+	border-radius: 5px;
+	display: flex;
+	width: 90%;
+	max-width: 1500px;
+	margin: auto;
+	color: white;
+	background-color: #212121;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	border-bottom: 2px solid white;
+}
+
+.profile-image {
+	width: 25%;
+	border-radius: 5px 0 0;
+}
+
+.short-info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 75%;
+}
+
+.name {
+	align-self: center;
+	margin: 5px 20px;
+}
+
+.job {
+	align-self: center;
+	margin: 5px 20px;
+}
+
+.header-navigation {
+	width: 100%;
+	height: fit-content;
+}
+
+.navigation-links {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-link {
+	box-sizing: border-box;
+	flex: 1 1 auto;
+	text-align: center;
+	display: block;
+	padding: 8px;
+	list-style: none;
+	border-bottom: 2px solid white;
+
+	transition: background-color 0.2s ease-in-out;
+	transition: border-bottom;
+}
+
+.navigation-link:hover {
+	background-color: #383838;
+	border-bottom: 2px solid white;
+}
+
+.navigation-link > a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info-side {
+	width: 25%;
+}
+
+.info {
+	width: 75%;
+}
+
+.contacts-text, .languages-text, .about-me-text, .skills-text, .projects-text, .code-text, .edu-text {
+	margin: 5px;
+	text-align: center;
+}
+
+.contacts-list, .skills-list, .languages-list {
+	padding: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+.edu-list {
+	padding: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+.edu-list > li {
+	margin-top: 8px;
+}
+
+.contacts, .skills, .langs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	word-wrap: break-word;
+	padding-left: 12px;
+	padding-top: 10px;
+}
+
+.edu, .projects, .code, .about-me {
+	padding: 10px;
+}
+
+.about-me-article, .projects-article, .code-task, .edu-article {
+	margin: 15px;
+}
+
+.contacts-list-item {
+	word-wrap: break-word;
+}
+
+.code-block {
+	border-radius: 5px;
+}
+
+footer {
+	margin-top: 10px;
+	border-top: 2px solid white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: #2b2a2a;
+	border-radius: 0 0 5px 5px;
+}
+
+.gh-logo {
+	margin: 10px;
+	width: 100%;
+	transform-origin: center;
+	transform: rotate(0deg);
+}
+
+.gh-logo:hover {
+	animation: rotate 0.85s infinite linear;
+}
+
+.gh-link {
+	width: 4%;
+}
+
+.rsschool-link {
+	width: 10%;
+	transition: width 0.2s ease-in-out;
+}
+
+.rsschool-link:hover {
+	width: 12%;
+}
+
+.footer-year {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.footer-year:hover {
+	animation: change-colors 2s linear infinite;
+}
+
+
+.javascript {
+	margin-bottom: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes change-colors {
+	0% {
+		color: white;
+	}
+	25% {
+		color: crimson;
+	}
+	50% {
+		color: deepskyblue
+	}
+	75% {
+		color: gold
+	}
+	100% {
+		color: greenyellow;
+	}
+}
